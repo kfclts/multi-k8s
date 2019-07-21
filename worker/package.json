@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "nodemon": "1.18.3",
+    "redis": "^2.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon"
+  },
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "woker for finernic",
+  "main": "index.js",
+  "author": "KFC",
+  "license": "ISC"
+}
