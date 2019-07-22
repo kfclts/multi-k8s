@@ -10,11 +10,11 @@ metadata:
 spec:
   tls:
     - hosts:
-        - kfclts.nctu.me
-        - www.kfclts.nctu.me
-      secretName: kfclts-nctu-me
+        - fstop-rd.nctu.me
+        - www.fstop-rd.nctu.me
+      secretName: fstop-rd-nctu-me
   rules:
-    - host: kfclts.nctu.me
+    - host: fstop-rd.nctu.me
       http:
         paths:
           - path: /?(.*)
@@ -27,7 +27,7 @@ spec:
             backend:
               serviceName: server-cluster-ip-service
               servicePort: 5000
-    - host: www.kfclts.nctu.me
+    - host: www.fstop-rd.nctu.me
       http:
         paths:
           - path: /?(.*)

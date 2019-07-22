@@ -1,20 +1,20 @@
 apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
-  name: kfclts-nctu-me-tls
+  name: fstop-rd-nctu-me-tls
 spec:
-  secretName: kfclts-nctu-me
+  secretName: fstop-rd-nctu-me
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: kfclts.nctu.me
+  commonName: fstop-rd.nctu.me
   dnsNames:
-    - kfclts.nctu.me
-    - www.kfclts.nctu.me
+    - fstop-rd.nctu.me
+    - www.fstop-rd.nctu.me
   acme:
     config:
       - http01:
           ingressClass: nginx
         domains:
-          - kfclts.nctu.me
-          - www.kfclts.nctu.me
+          - fstop-rd.nctu.me
+          - www.fstop-rd.nctu.me
